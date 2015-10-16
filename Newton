@@ -1,0 +1,10 @@
+#Newton's Method
+
+while True:
+    print "--------------"
+    print "---Newton's---"
+    print "----Method----"
+    print "--------------"
+
+
+    

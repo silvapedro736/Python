@@ -1,0 +1,28 @@
+#SimpleGUI Test
+
+import SimpleGUICS2Pygame.simpleguics2pygame as simplegui
+
+
+class Canvas:
+    """
+    Canvas similar to SimpleGUI `Canvas` of CodeSkulptor.
+    """
+
+    _background_pygame_color = (_SIMPLEGUICOLOR_TO_PYGAMECOLOR['black']
+                                if _PYGAME_AVAILABLE
+                                else None)
+    """
+    Default `pygame.Color` of the background of the canvas.
+    """
+
+    _background_pygame_surface_image = None
+    """
+    `pygame.Surface` default background image
+    replaces `_background_pygame_color`.
+    """
+
+def __init__(self,
+                 frame,
+                 canvas_width, canvas_height):
+
+                    assert _PYGAME_AVAILABLE

@@ -1,5 +1,60 @@
+#Weight Giver v2.0
 
-#Weight Giver
+#import os
+#import os.path
+
+#path = os.getcwd()
+
+print "Number of students: "
+numstud = raw_input()
+print "Number of questions: "
+numques = raw_input()
+#g = {}
+#for x in range(int(numstud)):
+#    y = "student" + str(x + 1)
+#    g[y] = []
+
+question1 = []
+
+print "Import grades from TextEdit [1]"
+print "Enter grades manually       [2]"
+
+gra = raw_input()
+
+if gra == "1":
+
+    print "Input TextEdit File In WeightGiver Folder"
+    print
+    print
+    print "-----------------------------------------"
+    print "-----NOTE: BE SURE THE FORMAT OF THE-----"
+    print "---------------TextEDIT IS:--------------"
+    print "(Student1Name)"
+    print "(ScoreQuestion1)"
+    print "(ScoreQuestion2)"
+    print "(ScoreQuestion3)"
+    print "(Student2Name)"
+    print "-----------------------------------------"
+    print "Input File Name: ",
+    filename = raw_input()
+
+    with open(filename, "r") as teacher:
+        students = []
+        for line in teacher:
+            students.append(line)
+
+    for x in range(numques):
+        #Do another variable to count at what question you are at, therefore
+        #knowing how much to add to the x to actually get the value of the
+        #score that the student got.
+        
+
+if gra == "2":
+
+    print
+    
+
+
 
 student1 = [.6, .7, .8]
 student2 = [.9, .9, .5]
@@ -84,3 +139,4 @@ print "Percentage Increase: " + str(final)
 print "Weight for question 1: " + str(w[3])
 print "Weight for question 2: " + str(w[4])
 print "Weight for question 3: " + str(w[5])
+
