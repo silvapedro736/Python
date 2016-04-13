@@ -25,6 +25,7 @@ def signupCallBack():
     signup = Tk()
 
     print 'hey'
+    print eUsername.get()
     
     signup.minsize(width = 250, height = 127)
     signup.maxsize(width = 250, height = 127)

@@ -2,7 +2,7 @@ import random
 
 a = []
 n = 0.0
-p = 100000000
+p = 100000
 
 for i in range(p):
     x = random.uniform(-1, 1)

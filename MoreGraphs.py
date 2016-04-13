@@ -5,7 +5,7 @@ import random
 
 a = 0
 rec = []
-num1 = 400
+num1 = 10
 array = []
 MaxFreq = 0
 for i in range(num1):
@@ -23,7 +23,7 @@ for i in range(len(array)):
         MaxFreq = array[i]
         
 graph = GraphWin("BarGraph", 400, 400)
-graph.setCoords(-.2, 0, num1, MaxFreq)
+graph.setCoords(-.2, 0, num1, MaxFreq + 10)
 
 for i in range(num1):
     p1 = Point((i), 0)

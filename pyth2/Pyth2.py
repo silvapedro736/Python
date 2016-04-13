@@ -133,7 +133,8 @@ while MainMenu:
                 physics = False
                 break
 
-            a = -9.8
+            a = -10.0
+            #a = -9.81
             dt = 0.01
             t = 0
             v = float(v0)
